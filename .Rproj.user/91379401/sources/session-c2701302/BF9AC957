@@ -1,6 +1,6 @@
 {
     "id": "BF9AC957",
-    "path": "~/Desktop/zoellis.github.io/zoellis.github.io/index.qmd",
+    "path": "~/Desktop/zoellis.github.io/REALzoellis.github.io/index.qmd",
     "project_path": "index.qmd",
     "type": "quarto_markdown",
     "hash": "0",
@@ -11,7 +11,9 @@
     "relative_order": 2,
     "properties": {
         "source_window_id": "",
-        "Source": "Source"
+        "Source": "Source",
+        "cursorPosition": "1,0",
+        "scrollLine": "0"
     },
     "folds": "",
     "lastKnownWriteTime": 1739993173,

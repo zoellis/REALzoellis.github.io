@@ -1,9 +1,9 @@
 {
     "id": "BB938A8D",
-    "path": "~/Desktop/zoellis.github.io/zoellis.github.io/_quarto.yml",
+    "path": "~/Desktop/zoellis.github.io/REALzoellis.github.io/_quarto.yml",
     "project_path": "_quarto.yml",
     "type": "yaml",
-    "hash": "0",
+    "hash": "2651177606",
     "contents": "",
     "dirty": false,
     "created": 1740026160464.0,
@@ -11,14 +11,16 @@
     "relative_order": 3,
     "properties": {
         "source_window_id": "",
-        "Source": "Source"
+        "Source": "Source",
+        "cursorPosition": "31,18",
+        "scrollLine": "18"
     },
     "folds": "",
-    "lastKnownWriteTime": 1739993173,
+    "lastKnownWriteTime": 1740033090,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1739993173,
+    "last_content_update": 1740033090702,
     "read_only": false,
     "read_only_alternatives": []
 }
