@@ -1,1 +1,195 @@
-/* css styles */
+/* Root Variables */
+:root {
+  --white: #fff;
+  --gray-100: #f8f9fa;
+  --gray-200: #f7f7f9;
+  --gray-300: #dee2e6;
+  --gray-400: #ccc;
+  --gray-500: #aaa;
+  --gray-600: #868e96;
+  --gray-700: #555;
+  --gray-800: #333;
+  --gray-900: #212529;
+  --black: #000;
+
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+
+  --primary: var(--gray-800);
+  --secondary: var(--gray-700);
+  --success: var(--green);
+  --info: var(--cyan);
+  --warning: var(--yellow);
+  --danger: var(--red);
+  --light: var(--white);
+  --dark: var(--gray-700);
+
+  --min-contrast-ratio: 1.6;
+
+  --link-decoration: underline;
+
+  --border-width: 2px;
+  --border-radius: 25px;
+  --border-radius-lg: 35px;
+  --border-radius-sm: 15px;
+
+  --font-family-sans-serif: Neucha, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-weight-base: 700;
+  --headings-font-family: "Cabin Sketch", cursive;
+
+  --blockquote-small-color: var(--gray-800);
+
+  /* Tables */
+  --table-hover-bg: var(--white);
+  --table-border-width: 2px;
+  --table-border-color: var(--gray-800);
+
+  /* Forms */
+  --input-border-color: var(--gray-800);
+  --input-disabled-border-color: var(--gray-600);
+  --input-focus-border-color: var(--input-border-color);
+
+  --form-select-disabled-color: var(--gray-600);
+  --form-select-disabled-border-color: var(--input-disabled-border-color);
+
+  /* Dropdowns */
+  --dropdown-border-color: var(--gray-800);
+  --dropdown-divider-bg: var(--gray-800);
+  --dropdown-link-hover-color: var(--white);
+  --dropdown-link-hover-bg: var(--gray-800);
+
+  /* Navbar */
+  --pagination-border-color: var(--gray-800);
+  --pagination-hover-color: var(--white);
+  --pagination-hover-bg: var(--gray-800);
+  --pagination-hover-border-color: var(--gray-800);
+  --pagination-disabled-color: var(--gray-400);
+  --pagination-disabled-border-color: var(--gray-800);
+
+  /* Cards */
+  --card-border-width: 2px;
+  --card-border-color: var(--gray-800);
+
+  /* Popovers */
+  --popover-border-color: var(--gray-800);
+
+  /* Badges */
+  --badge-padding-y: .5em;
+  --badge-padding-x: 1.2em;
+
+  /* Toasts */
+  --toast-border-width: 2px;
+  --toast-border-color: var(--gray-800);
+  --toast-header-color: var(--gray-800);
+  --toast-header-border-color: var(--toast-border-color);
+
+  /* Modals */
+  --modal-content-border-color: var(--gray-800);
+  --modal-header-border-color: var(--gray-800);
+
+  /* Progress bars */
+  --progress-bg: var(--white);
+  --progress-bar-bg: var(--gray-400);
+
+  /* List group */
+  --list-group-border-color: var(--gray-800);
+  --list-group-hover-bg: var(--gray-300);
+  --list-group-active-color: var(--white);
+  --list-group-active-bg: var(--gray-800);
+  --list-group-action-color: var(--gray-800);
+
+  /* Breadcrumbs */
+  --breadcrumb-padding-y: .375rem;
+  --breadcrumb-padding-x: .75rem;
+  --breadcrumb-divider-color: var(--gray-800);
+  --breadcrumb-active-color: var(--gray-800);
+  --breadcrumb-border-radius: .25rem;
+}
+
+/* Navbar */
+.navbar {
+  border-style: solid;
+  border-width: var(--border-width);
+  border-radius: 25px 25px 55px 5px / 5px 55px 25px 25px;
+}
+
+.navbar.bg-light {
+  border-color: var(--gray-800);
+}
+
+.navbar.fixed-top {
+  border-width: 0 0 2px;
+  border-radius: 0 25px 225px 0 / 25px 0 25px 255px;
+}
+
+.navbar.fixed-bottom {
+  border-width: 2px 0 0;
+  border-radius: 255px 25px 0 25px / 25px 225px 25px 0;
+}
+
+.navbar-brand {
+  font-family: var(--headings-font-family);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* Buttons */
+.btn {
+  text-decoration: none;
+  border-radius: var(--border-radius);
+
+}
+
+.btn-lg {
+  border-radius: var(--border-radius-lg);
+}
+
+.btn-sm {
+  border-radius: var(--border-radius-sm);
+}
+
+/* Typography */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: var(--font-family-sans-serif);
+}
+
+b,
+strong {
+  font-family: var(--headings-font-family);
+}
+
+blockquote {
+  border-radius: 15px 27px 25px 25px / 25px 25px 305px 635px;
+}
+
+/* Tables */
+table th, table td {
+  background-color: var(--white);
+}
+
+.table-bordered {
+  overflow: hidden;
+  border-spacing: 0;
+  border-collapse: separate;
+  background-color: var(--gray-800);
+  border-radius: 5px 25px 5px 25px / 25px 5px 25px 5px;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border-radius: 5px 5px 25px 4px / 5px 4px 3px 5px;
+}
+
+/* Additional styles continue... */
