@@ -1,0 +1,87 @@
+---
+title: "day-06"
+format: html
+---
+
+---
+title: "Ecosystem Science and Sustainability 330"
+author: Zoe Ellis
+format: html
+subtitle: 'Quantitative Reasoning for Ecosystem Science'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## COVID-19 Data
+
+### Data
+
+
+```{r, eval = FALSE}
+https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties-recent.csv
+```
+
+### Start
+
+
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+url = 'https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties-recent.csv'
+covid = read_csv(url)
+head(covid, 5)
+```
+
+```{r, eval = FALSE}
+slice(covid, 1:5)
+```
+
+## Question 1: 
+
+```{r} 
+covid %>%
+  filter(date == max(date)) %>%
+  arrange(desc(cases)) %>%
+  slice(1:5)
+
+```
+
+## Question 2: 
+
+```{r}
+covid %>%
+  filter(date == max(date)) %>%
+  group_by(state) %>%
+  summarize(total_cases = sum(cases)) %>%
+  arrange(desc(total_cases)) %>%
+  slice(1:5)
+
+```
+
+## Question 3: 
+
+```{r}
+covid %>%
+  filter(date == max(date), cases > 0, county != "Unknown") %>%
+  mutate(death_case_ratio = 100 * (deaths / cases)) %>%
+  arrange(desc(death_case_ratio)) %>%
+  slice(1:5)
+
+```
+
+## Question 4: 
+
+
+(**Hint:** `filter`, `group_by`, `summarize`, `mutate`, `arrange`, `slice`)
+
+```{r}
+covid %>%
+  filter(date == max(date), cases > 0) %>%
+  group_by(state) %>%
+  summarize(total_deaths = sum(deaths), total_cases = sum(cases)) %>%
+  mutate(death_case_ratio = 100 * (total_deaths / total_cases)) %>%
+  arrange(desc(death_case_ratio)) %>%
+  slice(1:5)
+
+```
