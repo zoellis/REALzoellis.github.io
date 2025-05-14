@@ -4,8 +4,81 @@ title: "Projects"
 
 In the Spring of 2025 I took a class Quantative Reasoning class based in R. I wrote some code, and did some cool data science. Here is a collection of links! 
 
-## [Building a project website]()
+## Building a Project Website
 
-- In this assignment we built a static users site with Github Pages 
-- Includes a github repo for access to all the code.
+### Lab 1
+- In this assignment we built a static user site with GitHub Pages.  
+- Includes a GitHub repo for access to all the code.  
 - Look at how high quality my work is!
+
+![Lab 1](img/L1.png)
+
+---
+
+### Lab 2
+In this lab, I got to get my first experience working with `dplyr` to better summarize and manipulate data. This was done through pulled Minnesota Tree Growth Data.
+
+![Lab 2](img/L2.png)
+
+---
+
+### Lab 3
+Lab 3 was working with one of the largest data sets throughout the semester where I learned to compare datasets through `patchwork`.
+
+![Lab 3](img/L3.png)
+
+---
+
+### Lab 4
+I learned how to perform t-tests and other statistical testing in R. I also learned how to perform an ANOVA test that I later used for my final presentation.
+
+![Lab 4](img/L4.png)
+
+---
+
+### Lab 5
+I proposed my topics for our final research. I learned how to embed bibliography citations for my chosen articles.
+
+![Lab 5](img/L5.png)
+
+---
+
+### Lab 6
+I learned how to programmatically download and access data, as well as compare models with workflows.
+
+![Lab 6](img/L6.png)
+
+---
+
+### Lab 7
+I made a manuscript folder where I kept all of the prospective authors I was going to use for my project.
+
+![Lab 7](img/L7.png)
+
+---
+
+### Lab 8
+I learned about Machine Learning processes, where I put together everything I have learned into a complete system.
+
+![Lab 8](img/L8.png)
+
+---
+
+### Lab 9
+I set up my project in a palatable format where the methods and results flowed. I also learned about drafting a good analysis of my results.
+
+![Lab 9](img/L9.png)
+
+---
+
+### Lab 10
+I learned how to build `sf` objects from R packages and CSV files, as well as manipulating coordinate systems.
+
+![Lab 10](img/L10.png)
+
+---
+
+### Lab 11
+I gave my Final Project Lightning Talk and learned about science communication and presenting data to my class.
+
+![Lab 11](img/L11.png)
